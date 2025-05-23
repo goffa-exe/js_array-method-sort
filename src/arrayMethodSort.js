@@ -9,10 +9,10 @@ function applyCustomSort() {
       for (let j = 0; j < this.length - 1 - i; j++) {
         // -i is
         // just optimization for bubble sort
-        const a = String(this[j]);
-        const b = String(this[j + 1]);
-
         if (compareFunction === undefined) {
+          const a = String(this[j]);
+          const b = String(this[j + 1]);
+
           if (a > b) {
             [this[j], this[j + 1]] = [this[j + 1], this[j]];
           }
