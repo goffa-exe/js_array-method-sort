@@ -17,7 +17,7 @@ function applyCustomSort() {
             [this[j], this[j + 1]] = [this[j + 1], this[j]];
           }
         } else {
-          if (compareFunction(a, b) > 0) {
+          if (compareFunction(this[j], this[j + 1]) > 0) {
             [this[j], this[j + 1]] = [this[j + 1], this[j]];
           }
         }
